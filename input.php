@@ -35,6 +35,16 @@ function validate($link,$url)											   //It will check weather the link is v
 		return "null";														//not a valid link
 	}
 }
+function DeleteEntry() 										//Function to delete the content in table Entry.
+{
+	$query = "DELETE FROM `Entry` WHERE No ";
+	$result = mysql_query($query);
+}
+function Deletempthree()									//function to delete the content in table mpthree.
+{
+	$query = "DELETE FROM `mpthree` WHERE No ";
+	$result = mysql_query($query);
+}
 $p = mysql_num_rows(mysql_query("SELECT * FROM Entry"));
 
 $i = 0;
@@ -107,6 +117,8 @@ while ($showrow=mysql_fetch_row($show)) {
 	echo $showrow[1]."</br>";
 }
 echo "</body></html>";
+DeleteEntry();
+Deletempthree();
 mysql_free_result($result);
 
 mysql_close($connection);
