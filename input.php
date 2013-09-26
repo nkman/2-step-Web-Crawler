@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $db = 'sample';
-$pwd = 'nkman';
+$pwd = '******';
 require('phpQuery/phpQuery.php');
 $connection = mysql_connect($host,$user,$pwd) or die("unable to connect to database");
 mysql_select_db($db) or die("Unable to select database");
