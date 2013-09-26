@@ -1,0 +1,3 @@
+Create a database named 'sample'.
+In this database create two tables.
+Both tables should have two columns, No(int type) and link(varchar).
